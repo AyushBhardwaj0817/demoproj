@@ -1,7 +1,1 @@
-Task Management System APIThis repository contains a RESTful API for a task management system built using Node.js, TypeScript, Google Cloud Functions, and Fastify. This API allows users to manage tasks, including creating, reading, updating, and deleting tasks.FeaturesRESTful API: Follows REST principles for managing resources.Node.js: Server-side JavaScript runtime environment.TypeScript: Enhances JavaScript with static typing for improved code quality and maintainability.Google Cloud Functions: Serverless environment for running your code.Fastify: High-performance web framework.RequirementsNode.js: >=14.xnpm: >=6.xGoogle Cloud SDK: Required for deploying Cloud FunctionsInstallationClone the repository:git clone https://github.com/yourusername/task-management-api.git
-cd task-management-apiInstall dependencies:npm installConfigurationEnvironment Variables: Create a .env file in the root directory and add the following variables:PORT=3000
-DATABASE_URL=your-database-url
-GOOGLE_APPLICATION_CREDENTIALS=path-to-your-service-account-json-fileDatabase Setup: Ensure your relational database is set up and that the DATABASE_URL is correctly configured.Running the API LocallyStart the development server:npm run devThe API will be accessible at http://localhost:3000.DeploymentDeploy to Google Cloud Functions:gcloud functions deploy taskManagementApi \
-  --runtime nodejs14 \
-  --trigger-http \
-  --allow-unauthenticatedUpdate the function name and other configurations as needed.API EndpointsTasksGET /tasks: Retrieve all tasksGET /tasks/:id: Retrieve a task by IDPOST /tasks: Create a new taskPUT /tasks/:id: Update a task by IDDELETE /tasks/:id: Delete a task by ID
+
